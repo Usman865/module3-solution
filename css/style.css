@@ -1,0 +1,72 @@
+/* General Body Styling (Optional, but good practice for readability) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light background for the page */
+}
+
+/* Custom Styles for Navbar */
+.navbar-default {
+    background-color: #f5f5f5; /* Light background for the navbar */
+    border-radius: 0; /* Remove rounded corners */
+    border: none; /* Remove default border */
+}
+
+.navbar-brand {
+    font-size: 2em; /* Make the brand name larger */
+    font-weight: bold;
+    color: #333 !important; /* Ensure the color is distinct */
+    line-height: 50px; /* Vertically align with default navbar height */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Styles for the Mobile Dropdown Menu */
+/* This targets the collapsed menu when it's open */
+#mobile-nav-collapse.in {
+    background-color: #666; /* Darker background for the dropdown */
+    width: 100%;
+    position: absolute; /* Position it relative to the navbar, allowing full width */
+    left: 0;
+    top: 50px; /* Adjust this value if your navbar height is different */
+    z-index: 1000; /* Ensure it appears above other content */
+    border-top: 1px solid #999; /* A subtle separator */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow */
+}
+
+#mobile-nav-collapse .navbar-nav {
+    margin: 0; /* Remove default Bootstrap margin */
+}
+
+#mobile-nav-collapse .navbar-nav li {
+    width: 100%; /* Make each list item take full width */
+    text-align: center; /* Center the text within each item */
+}
+
+#mobile-nav-collapse .navbar-nav li a {
+    color: white; /* White text for menu items */
+    padding: 15px 0; /* Add vertical padding */
+    font-size: 1.2em; /* Make text a bit larger */
+    border-bottom: 1px solid #777; /* Separator between menu items */
+}
+
+#mobile-nav-collapse .navbar-nav li:last-child a {
+    border-bottom: none; /* No border for the last item */
+}
+
+
+/* Styles for the Single Tall Section */
+.section-box {
+    background-color: #dcdcdc; /* Light grey background for the section */
+    border: 1px solid #999; /* Border for the section */
+    margin-bottom: 20px; /* Space below the section */
+    padding: 20px; /* Padding inside the section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    min-height: 1200px; /* Make the section really tall as required */
+    overflow: auto; /* Ensures content doesn't spill out if it exceeds min-height */
+}
+
+.section-box h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
