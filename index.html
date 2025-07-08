@@ -4,70 +4,84 @@
   <meta charset="UTF-8">
   <title>Food, LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 3 CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Food, LLC</a>
-        <!-- Mobile toggle button -->
-        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <!-- Mobile menu -->
-      <div class="collapse navbar-collapse visible-xs" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Chicken</a></li>
-          <li><a href="#">Beef</a></li>
-          <li><a href="#">Sushi</a></li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Food, LLC</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-  </nav>
 
-  <!-- Heading -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <!-- Mobile menu -->
+      <ul class="nav navbar-nav visible-xs">
+        <li><a href="#" onclick="showSection('chicken')">Chicken</a></li>
+        <li><a href="#" onclick="showSection('beef')">Beef</a></li>
+        <li><a href="#" onclick="showSection('sushi')">Sushi</a></li>
+      </ul>
+
+      <!-- Desktop/Tablet menu -->
+      <ul class="nav navbar-nav hidden-xs">
+        <li><a href="#" onclick="showSection('chicken')">Chicken</a></li>
+        <li><a href="#" onclick="showSection('beef')">Beef</a></li>
+        <li><a href="#" onclick="showSection('sushi')">Sushi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Heading -->
   <div class="container">
     <h1 class="text-center">Our Menu</h1>
   </div>
 
   <!-- Sections -->
   <div class="container">
-    <div class="row">
-      <!-- Chicken -->
-      <div class="col-md-4 col-sm-4 col-xs-12 section-box">
-        <h3 class="text-center">Chicken</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        </p>
-      </div>
-      <!-- Beef -->
-      <div class="col-md-4 col-sm-4 col-xs-12 section-box">
-        <h3 class="text-center">Beef</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        </p>
-      </div>
-      <!-- Sushi -->
-      <div class="col-md-4 col-sm-4 col-xs-12 section-box">
-        <h3 class="text-center">Sushi</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        </p>
-      </div>
+    <!-- Chicken -->
+    <div id="chicken-section" class="section-box">
+      <h3 class="text-center">Chicken</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis itaque, quis modi iusto maxime, distinctio tenetur voluptatum nihil excepturi magnam ipsa reprehenderit saepe, suscipit dignissimos. Temporibus ratione reprehenderit eaque eos fuga qui nulla saepe, doloremque atque architecto beatae cupiditate voluptate voluptas. Culpa quibusdam maiores, vitae tenetur sint iure laudantium non veritatis doloremque, iusto voluptate odit explicabo dicta animi quos modi exercitationem. Harum voluptas eligendi quos quisquam optio dolores quasi, atque ab? Consequuntur laudantium, vitae labore consequatur nihil voluptates at sed repudiandae totam! Numquam quae, nesciunt harum distinctio deleniti voluptate eveniet, ex vitae magni porro tenetur aspernatur exercitationem ducimus ea aut, dolorem odio. Accusamus earum nam a ullam iure ipsam ipsa commodi voluptatibus aspernatur? Molestias commodi earum similique. Aspernatur quos beatae atque deserunt vitae debitis aut quaerat, eius porro labore, magnam ab eligendi corporis nisi asperiores recusandae ex voluptates quia dignissimos, impedit ipsum error velit sit tempora? Magni nobis deleniti eligendi quia nisi exercitationem totam accusantium illum necessitatibus, sed facilis quos distinctio voluptatibus maxime amet officiis harum? Similique harum, numquam, explicabo reiciendis laboriosam perspiciatis distinctio aspernatur praesentium ea, architecto ex neque aperiam hic dolorum cumque non magni? Obcaecati tempore, et debitis laborum veritatis ipsum beatae commodi natus, saepe maiores consequuntur ipsam, earum autem nisi assumenda cupiditate. Libero cumque et minima optio quae illo? Iusto accusamus saepe fugit! Eos, earum sit consectetur, ab pariatur tempore excepturi quo ut animi minima odit totam, ratione ducimus minus velit enim fugit optio. Delectus facilis illo accusantium voluptates voluptas? Unde itaque ea perspiciatis cumque tempore! Ipsa quaerat quos ducimus eaque accusantium, itaque obcaecati, omnis placeat repellendus est nihil explicabo modi, doloremque blanditiis velit? Nam repudiandae vero praesentium. Mollitia, omnis, nisi ipsa itaque magni cumque ducimus iusto optio, ut dolor sit numquam culpa accusamus saepe vel dolorem minus quo! Delectus ad hic voluptates nihil eos laborum beatae cupiditate sunt illo, animi facere, quaerat aut quo magni possimus totam magnam amet, aliquid tenetur reiciendis eligendi veritatis laboriosam culpa! Error deleniti eos similique expedita ab corrupti nisi incidunt debitis dolore sequi, explicabo, nulla ex, eaque ad placeat dolorem ipsum officiis tenetur? Dolorum ratione ipsum aut praesentium consequuntur obcaecati veniam magni eveniet quae nulla molestiae iusto explicabo nam impedit, mollitia delectus sunt consequatur ex? Id itaque deserunt quo quas minima officiis corporis cum doloribus accusamus at unde autem dolor, voluptates provident aliquid. Nisi eaque omnis a architecto minus nulla, reprehenderit totam provident. Sequi pariatur totam ea molestiae dignissimos aut dicta, voluptatem et ipsam adipisci ut repellat, ratione veritatis consectetur ipsa necessitatibus ex? Quidem dolor quas nostrum ratione dolore non vero totam accusantium corrupti deleniti animi libero reprehenderit tenetur nobis odit et recusandae quae, sunt nisi deserunt praesentium odio est! A architecto mollitia adipisci ratione voluptate? Tenetur deserunt dolore inventore quae harum mollitia necessitatibus rerum dolorum nisi obcaecati, totam explicabo nobis, earum, laudantium consequuntur nostrum nemo iusto accusantium amet quam ipsum soluta animi. Quae quam numquam, veritatis, nihil repudiandae vitae necessitatibus consequuntur accusantium non aut iusto quibusdam aliquam. Fugiat veniam minus magnam veritatis officiis illo dolores ducimus praesentium voluptas voluptatum.</p>
+    </div>
+
+    <!-- Beef -->
+    <div id="beef-section" class="section-box hidden">
+      <h3 class="text-center">Beef</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sequi distinctio molestias ipsa iure iste, in nam. Consectetur, tempore quam molestias fugiat necessitatibus sunt! Magni optio reprehenderit tempora magnam perspiciatis est ex ad quibusdam sapiente maxime odio explicabo at, voluptatum tempore omnis dicta fugiat aliquid vel fuga laudantium! Voluptatem, adipisci itaque ex dolor aspernatur tempore vitae cum ipsum incidunt dignissimos eos, omnis laborum dicta earum? Quae atque quis recusandae adipisci ullam, itaque natus repellendus! Obcaecati quaerat consequuntur eveniet alias ipsam. Recusandae tempore quod facilis laborum! Cupiditate enim quisquam recusandae ut voluptatem quos delectus aut ducimus soluta magnam nulla, aliquid deleniti officiis eveniet eligendi reiciendis veritatis quam dolor cumque consectetur suscipit quasi! Autem nemo quasi nostrum vitae suscipit officiis voluptatem officia, eligendi a magnam iste dolor pariatur velit quia voluptas dignissimos iusto dolorum aliquid harum ducimus non laudantium placeat cum! Dolorem deserunt neque aspernatur perferendis quae. Delectus tenetur voluptates ex id culpa dignissimos totam veniam provident assumenda, nemo eaque excepturi deserunt? Placeat harum at corrupti dicta iste incidunt perspiciatis eius praesentium nobis alias adipisci id accusamus nulla quidem totam, vero ad quia dolor neque architecto ipsum! At nisi doloremque dignissimos debitis modi ut expedita! Enim nostrum explicabo labore iusto obcaecati eius sint voluptatum amet. Assumenda sequi alias, pariatur id itaque impedit quia dicta obcaecati quod ad culpa ullam consequatur molestias, deserunt numquam iste adipisci vel ea labore velit perspiciatis! Incidunt provident assumenda, nihil repellendus maiores non esse ut odio atque fugit vel, expedita excepturi possimus reiciendis cumque magnam voluptate nam totam vitae dicta reprehenderit! Voluptatibus quo fuga, magnam quibusdam blanditiis nobis itaque quae repellat corrupti, pariatur sit velit quos ex cum soluta. Temporibus repudiandae in cupiditate sed. Ut nobis iure magnam libero aut perspiciatis velit? Aliquid ab quam dolores facilis quos veritatis eum. Distinctio ipsum commodi, cupiditate natus fuga id nihil asperiores sapiente, repellat minus modi quia officia ex reiciendis laboriosam. Ea exercitationem fuga distinctio nam voluptatibus ad eos consequuntur? Fuga dolores nesciunt architecto odio qui facere perferendis eligendi, nihil veritatis praesentium veniam rem unde dolorem quas quaerat aliquam autem, iste temporibus. Aperiam laudantium dolor quasi, nostrum odit aut sed magni incidunt. Porro impedit et reiciendis aut qui officia unde error quaerat ab quidem laborum sit maxime, alias ut illo recusandae nihil odio odit amet, rerum veritatis dicta. Beatae tempora cum impedit tempore asperiores quam veritatis optio deleniti eaque voluptate, saepe dignissimos error, nam doloribus iste explicabo quo voluptates sequi, commodi corporis nemo eius consequuntur? Nulla earum error quia ducimus suscipit eligendi, tempora maxime ullam illo odit neque. Ab dignissimos, numquam, doloribus, repellat dolore voluptatibus sit quia id harum nihil et debitis ipsa hic ex sequi dolorum excepturi rem voluptatem porro eligendi ipsum adipisci perferendis beatae fuga! Fuga, sunt laudantium! Vel consequatur laborum unde velit nam nemo corrupti voluptate ipsam aperiam. Dolores praesentium iste voluptatum corrupti natus similique voluptatibus repellat consectetur laudantium. Sit culpa eveniet corrupti itaque sequi facilis! Eum neque sequi tempore exercitationem placeat possimus explicabo, voluptate unde. Quos perspiciatis sunt iure maxime quasi velit tenetur magnam reiciendis repellat dolor!</p>
+    </div>
+
+    <!-- Sushi -->
+    <div id="sushi-section" class="section-box hidden">
+      <h3 class="text-center">Sushi</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, magni debitis? Hic recusandae amet alias voluptatibus aspernatur, totam qui beatae illo excepturi assumenda sit voluptate reiciendis ipsa harum quaerat provident animi quisquam? Modi vitae perferendis hic voluptates dolorum ipsam repellat, architecto quo. Temporibus atque quae itaque eligendi vitae, explicabo, natus harum aspernatur eaque impedit nemo, enim suscipit? Ut pariatur nostrum debitis eum id deserunt. Molestias adipisci facere voluptatum eum. Odit commodi omnis numquam veritatis distinctio, necessitatibus, ea, nihil fugit officiis voluptatem ducimus eaque quisquam sint tempore explicabo voluptas ab earum est repellendus asperiores! Dolorum fugit aspernatur expedita sunt quos nihil culpa doloremque tempora iusto molestiae cupiditate amet minima, beatae ipsam necessitatibus fuga ut natus inventore modi! Tempore temporibus fugiat repellat. Quasi obcaecati delectus molestias esse ut sunt, ipsum commodi eaque ducimus tenetur dolore fugiat iure nam ex totam debitis, corrupti nemo architecto aliquam consequuntur dolorum. Quis, culpa modi saepe eius repellat laboriosam recusandae quisquam ea placeat expedita. Facilis nam error aperiam atque. Voluptatum officia quidem optio exercitationem? Fugiat error veniam minima labore aliquam quod magni laboriosam dolore quas, unde qui excepturi, est vel eveniet molestias totam iusto! Cum at sit provident culpa fuga laborum blanditiis, necessitatibus, quos iusto minima est, exercitationem porro. Adipisci esse optio aperiam magni, excepturi modi quasi facere cumque eius voluptatum quae mollitia delectus pariatur architecto recusandae explicabo deleniti sed. Fugiat suscipit autem, ab temporibus quae tenetur laudantium quia commodi dolore atque necessitatibus aliquid deleniti, totam assumenda laborum. Recusandae aspernatur eligendi at laborum optio velit repudiandae, blanditiis voluptatibus provident dolorum libero, pariatur perspiciatis quam. Repudiandae laborum veniam dignissimos! Beatae iure rem enim voluptatibus molestias. Molestias reprehenderit quo quia, illum cupiditate ducimus deserunt temporibus optio doloribus rerum repellendus veritatis. Placeat libero repudiandae totam, nobis aperiam veritatis nemo illo fugit error eaque sapiente neque deleniti necessitatibus porro eum inventore in quam! Esse nihil voluptatum cum molestiae earum quasi nisi sequi, sapiente odit veritatis culpa quia doloremque? Ipsa vitae deleniti totam doloremque. Ullam repellendus modi nulla beatae provident ratione exercitationem voluptates voluptatum consequatur molestias veritatis perferendis quam minus assumenda, quis deserunt impedit aspernatur corporis doloribus architecto pariatur, rem optio corrupti. Qui consequuntur, doloremque ea ratione in dicta iusto ipsam doloribus explicabo earum rerum nulla quaerat quisquam ut soluta eaque deleniti. Iste excepturi beatae libero quis nisi dicta tenetur expedita illo! Et quod saepe facilis ratione ipsa aliquid, ad magnam est pariatur labore quidem obcaecati ab vel porro dicta minima dolore neque, recusandae officiis facere. Ab sunt necessitatibus consequuntur illo dignissimos dolorem a minima amet, ea voluptate soluta asperiores sit ipsum tenetur et rerum molestiae eos culpa corporis porro modi eligendi fuga consequatur. Minus, eaque beatae. At in fugiat quasi voluptate voluptates minus sit dignissimos iure dolores! Autem temporibus pariatur harum doloremque officiis sapiente veniam libero, fuga vel, itaque quam, perferendis vero exercitationem sint est. Error vitae exercitationem cumque sunt repellendus quidem veniam atque voluptate nemo velit nobis natus quod id quae architecto quibusdam iste voluptas, explicabo vel. Non, facere ratione? Nobis distinctio aperiam, soluta deserunt consectetur molestias fugiat impedit quos!</p>
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap & Script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function showSection(section) {
+      // Hide all
+      document.getElementById('chicken-section').classList.add('hidden');
+      document.getElementById('beef-section').classList.add('hidden');
+      document.getElementById('sushi-section').classList.add('hidden');
+
+      // Show selected
+      document.getElementById(section + '-section').classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
